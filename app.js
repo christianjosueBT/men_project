@@ -1,4 +1,4 @@
-// LMFAO WHAT 
+// LMFAO WHATalksndlkjansdjklaskld;jjas;kldjhas;odjhas;kldjhaso;kdj
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
