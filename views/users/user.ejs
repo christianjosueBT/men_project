@@ -1,0 +1,26 @@
+<%- include('../partials/header', {title: 'User Page', stylesheet: ""}) %>
+<%- include('../partials/navbar', {nav: 'nav'}) %>
+<%- include('../partials/messages') %>
+<!-- Main profile info -->
+<!-- <div class="container">
+    <div>
+        <img src="https://res.cloudinary.com/christianjosuebt/image/upload/coffeeShops/<%=userProfile.profilePicture.filename%>"></img>
+    </div>
+    <h1><%=userProfile.username%></h1>
+    <h1><%=userProfile.email%></h1>
+</div> -->
+
+<div class="container container--center">
+    <div class="card card--user">
+        <div class="card__image">
+            <img src="https://res.cloudinary.com/christianjosuebt/image/upload/coffeeShops/<%=userProfile.profilePicture.filename%>"></img>
+        </div>
+        <div class="card__body">
+            <h1><%=userProfile.username%></h1>
+            <h1><%=userProfile.email%></h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

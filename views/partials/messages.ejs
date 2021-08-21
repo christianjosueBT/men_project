@@ -1,0 +1,20 @@
+<div class="dismissible-container">
+   <% if(success.length) { %>
+       <div data-component="dismissible-item"
+        data-type="success"
+        data-value="<%=success%>">
+       </div>
+   <% } %>
+   <% if(info.length) { %>
+       <div data-component="dismissible-item"
+        data-type="info"
+        data-value="<%=info%>">
+       </div>
+   <% } %>
+   <% if(error.length) { %>
+       <div data-component="dismissible-item"
+        data-type="error"
+        data-value="<%=error%>">
+       </div>
+   <% } %>
+</div>

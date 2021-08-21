@@ -1,0 +1,20 @@
+<%- include('../partials/header', {title: 'New Coffee Shop', stylesheet: ""}) %>
+<%- include('../partials/navbar', {nav: 'nav'}) %>
+<%- include('../partials/messages') %>
+<!-- New coffee shop form -->
+<div class="container container--center">
+    <div class="card card--form">
+        <h2 class="card__title">Create a new Coffee Shop</h2>
+        <div class="card__body">
+            <form action="/coffeeShops" method="POST" enctype="multipart/form-data">
+                <input type="text" name="coffeeShop[name]" placeholder="Name" autofocus required>
+                <input type="text" name="coffeeShop[price]" placeholder="Price" required>
+                <textarea name="coffeeShop[description]" placeholder="Description" cols="40" rows="5" required></textarea>
+                <input type="file" name="coffees[images]" multiple>
+                <button class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
